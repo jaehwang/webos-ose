@@ -11,6 +11,7 @@
 
 In the `webososedev`, to build webOS OSE, follow the instructions in [webOS OSE web page](http://webosose.org/discover/setting/building-webos-ose/).
 
+    $ ./mcf raspberrypi3
     $ make webos-image
 
 ## USB WIFI Dongle for Raspberry PI 2
