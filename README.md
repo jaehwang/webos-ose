@@ -1,6 +1,6 @@
 # Getting Started with webOS OSE 
 
-## Docker
+## Docker for Build
 
     $ git clone https://github.com/webosose/build-webos.git
     $ cd docker
@@ -9,9 +9,13 @@
     $ cd ..
     $ docker run -it -v `pwd`/build-webos:/build -w /build webososedev
 
+In the `webososedev`, to build webOS OSE, follow the instructions in [webOS OSE web page](http://webosose.org/discover/setting/building-webos-ose/).
+
+    $ make webos-image
+
 ## USB WIFI Dongle for Raspberry PI 2
 
-Create `build-webos/webos-local.conf`.
+To use a wifi dongle, create `build-webos/webos-local.conf` and build again.
 
     MACHINE_EXTRA_RRECOMMENDS_append += "linux-firmware"
     MACHINE_EXTRA_RRECOMMENDS_append += "kernel-modules"
@@ -20,6 +24,11 @@ Create `build-webos/webos-local.conf`.
 
 You can enable wifi using Setting app. `/etc/wpa_supplicant.conf` seems to have nothing with wifi.
 
+## Flashing the Image
+
+Follow the instructions in [this page](http://webosose.org/discover/setting/flashing-webos-ose/). I use `dd` command as follows:
+
+    $ sudo dd bs=4M if=build-webos/BUILD/deploy/images/raspberrypi3/webos-image-raspberrypi3.rootfs.rpi-sdimg of=/dev/sdX status=progress conv=fsync
 
 ## Etc.
 
