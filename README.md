@@ -21,9 +21,9 @@ Create `build-webos/webos-local.conf`.
 You can enable wifi using Setting app. `/etc/wpa_supplicant.conf` seems to have nothing with wifi.
 
 
-## 기타
+## Etc.
 
-* I use Ubuntu 16.04 machine as a host.
+* I use a Ubuntu 16.04 machine as a host.
 * I use 4GB SD Card.
 
 <!--
