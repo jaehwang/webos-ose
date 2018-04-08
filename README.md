@@ -22,7 +22,7 @@ To use a wifi dongle, create `build-webos/webos-local.conf` and build again.
 
     IMAGE_INSTALL_append += "linux-firmware kernel-modules iw"
 
-You can enable wifi using Setting app. `/etc/wpa_supplicant.conf` seems to have nothing with wifi.
+You can enable wifi using Setting app. `/etc/wpa_supplicant.conf` seems to have nothing todo with wifi.
 
 ## Flashing the Image
 
