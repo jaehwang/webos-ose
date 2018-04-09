@@ -1,11 +1,12 @@
 # Getting Started with webOS OSE 
 
-## Docker for Build
+## Build with Docker
 
+    $ git clone git@github.com:jaehwang/webos-ose.git
+    $ cd webos-ose
     $ git clone https://github.com/webosose/build-webos.git
-    $ cd docker
-    $ cp ../build-webos/scripts/prerequisites.sh .
-    $ docker build -t webososedev .
+    $ cp build-webos/scripts/prerequisites.sh docker/
+    $ docker build -t webososedev docker
     $ cd ..
     $ docker run -it -v `pwd`/build-webos:/build -w /build webososedev
 
