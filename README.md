@@ -36,7 +36,8 @@ Follow the instructions in [this page](http://webosose.org/discover/setting/flas
 ## Etc.
 
 * I use a Ubuntu 16.04 machine as a host.
-* I use 4GB SD Card.
+* I use a USB wifi dongle with Realtek 8192cu.
+* I use a 4GB micro SD Card.
 
 <!--
 vim:nospell
