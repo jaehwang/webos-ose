@@ -1,5 +1,7 @@
 # Getting Started with webOS OSE 
 
+I have a Raspberry Pi 2 and Ubuntu 16.04 machine. Since [webOS Open Source Edition](http://webosose.org/) officially supports Raspberry Pi 3 and Ubuntu 14.04, I find a way that suits my environment.
+
 ## Build with Docker Ubuntu 14.04
 
     $ git clone git@github.com:jaehwang/webos-ose.git
