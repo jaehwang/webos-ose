@@ -1,6 +1,6 @@
 # Getting Started with webOS OSE 
 
-## Build with Docker
+## Build with Docker Ubuntu 14.04
 
     $ git clone git@github.com:jaehwang/webos-ose.git
     $ cd webos-ose
