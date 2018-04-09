@@ -32,6 +32,8 @@ Follow the instructions in [this page](http://webosose.org/discover/setting/flas
 
     $ sudo dd bs=4M if=build-webos/BUILD/deploy/images/raspberrypi3/webos-image-raspberrypi3.rootfs.rpi-sdimg of=/dev/sdX status=progress conv=fsync
 
+I expanded the partition that webOS is running on to use the full size of the SD card. I used `GParted` on my unbuntu 16.04 workstation.
+
 ## Etc.
 
 * I use a Ubuntu 16.04 machine as a host.
