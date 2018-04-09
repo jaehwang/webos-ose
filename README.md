@@ -4,6 +4,8 @@ I have a Raspberry Pi 2 and a Ubuntu 16.04 workstation. Since [webOS Open Source
 
 ## Build with Docker Ubuntu 14.04
 
+Before building Docker image, change `git` command in `docker\Dockerfile` to use your personal information.
+
     $ git clone git@github.com:jaehwang/webos-ose.git
     $ cd webos-ose
     $ git clone https://github.com/webosose/build-webos.git

@@ -1,5 +1,7 @@
 FROM ubuntu:14.04
 
+MAINTAINER Jaehwang Kim <kim.jaehwang@gmail.com>
+
 ARG UID=1000
 
 ADD prerequisites.sh /tmp
