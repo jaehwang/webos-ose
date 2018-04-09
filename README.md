@@ -6,9 +6,9 @@
     $ cd webos-ose
     $ git clone https://github.com/webosose/build-webos.git
     $ cp build-webos/scripts/prerequisites.sh docker/
-    $ docker build -t webososedev docker
+    $ sudo docker build --build-arg UID=$UID -t webososedev docker
     $ cd ..
-    $ docker run -it -v `pwd`/build-webos:/build -w /build webososedev
+    $ sudo docker run -it -v `pwd`/build-webos:/build -w /build webososedev
 
 In the `webososedev`, to build webOS OSE, follow the instructions in [webOS OSE web page](http://webosose.org/discover/setting/building-webos-ose/).
 
@@ -24,7 +24,7 @@ To use a wifi dongle, create `build-webos/webos-local.conf` and build again.
 
     IMAGE_INSTALL_append += "linux-firmware kernel-modules iw"
 
-You can enable wifi using Setting app. `/etc/wpa_supplicant.conf` seems to have nothing todo with wifi.
+You can enable wifi using [Setting app](http://webosose.org/discover/setting/setting-up-networking/). `/etc/wpa_supplicant.conf` seems to have nothing todo with wifi.
 
 ## Flashing the Image
 
