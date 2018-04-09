@@ -7,7 +7,6 @@
     $ git clone https://github.com/webosose/build-webos.git
     $ cp build-webos/scripts/prerequisites.sh docker/
     $ sudo docker build --build-arg UID=$UID -t webososedev docker
-    $ cd ..
     $ sudo docker run -it -v `pwd`/build-webos:/build -w /build webososedev
 
 In the `webososedev`, to build webOS OSE, follow the instructions in [webOS OSE web page](http://webosose.org/discover/setting/building-webos-ose/).
