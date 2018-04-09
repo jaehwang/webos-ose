@@ -20,12 +20,14 @@ In the `webososedev`, to build webOS OSE, follow the instructions in [webOS OSE 
 
 ## USB WIFI Dongle for Raspberry PI 2
 
-To use a wifi dongle, create `build-webos/webos-local.conf` and build again.
+To use a wifi dongle, create `build-webos/webos-local.conf` file.
 
     MACHINE_EXTRA_RRECOMMENDS_append += "linux-firmware"
     MACHINE_EXTRA_RRECOMMENDS_append += "kernel-modules"
 
     IMAGE_INSTALL_append += "linux-firmware kernel-modules iw"
+
+You may have to remove `build-webos/BUILD` directory to get a new image.
 
 You can enable wifi using [Setting app](http://webosose.org/discover/setting/setting-up-networking/). `/etc/wpa_supplicant.conf` seems to have nothing to do with wifi. :/
 
