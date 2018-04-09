@@ -9,7 +9,7 @@ RUN echo "builder ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 USER builder
 
-RUN git config --global user.email 'kim.jaehwang@gmail'com'
+RUN git config --global user.email 'kim.jaehwang@gmail.com'
 RUN git config --global user.name 'Jaehwang Kim'
 
 CMD ["/bin/bash"]
